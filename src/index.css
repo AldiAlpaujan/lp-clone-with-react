@@ -6,12 +6,18 @@ body {
   font-family: "font-poppins", sans-serif;
 }
 
+.navbar-fixed {
+  @apply z-[9999] bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
 .burger-menu-line {
-  @apply w-[30px] h-1 bg-black my-1 block rounded;
+  @apply w-[30px] h-[2px] bg-black my-[6px] block rounded;
 }
 
 .burger-menu-active > span:nth-child(1) {
-  @apply rotate-45 ml-[6px] mb-[6px];
+  @apply rotate-45 ml-[8px] mb-[8px];
 }
 
 .burger-menu-active > span:nth-child(2) {
@@ -19,5 +25,5 @@ body {
 }
 
 .burger-menu-active > span:nth-child(3) {
-  @apply -rotate-45 ml-[6px] mt-[6px];
+  @apply -rotate-45 ml-[8px] mt-[8px];
 }
