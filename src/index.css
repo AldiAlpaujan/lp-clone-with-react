@@ -13,7 +13,7 @@ body {
 }
 
 .burger-menu-line {
-  @apply w-[30px] h-[2px] bg-black my-[6px] block rounded;
+  @apply w-[30px] h-[2px] bg-primary my-[6px] block rounded;
 }
 
 .burger-menu-active > span:nth-child(1) {
